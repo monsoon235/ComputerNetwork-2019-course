@@ -1,6 +1,6 @@
 # Computer Networking Lab -- DNS
 
-## 1. Run nslookup to obtain the IP address of a Web server in Asia. 
+## 1. Run nslookup to obtain the IP address of a Web server in Asia.
 
 ```shell
 $ nslookup www.ustc.edu.cn
@@ -88,7 +88,7 @@ Name:   fd-geoycpi-uno.gycpi.b.yahoodns.net
 Address: 2001:4998:28:800::4000
 ```
 
-## 4. Locate the DNS query and response messages. Are then sent over UDP or TCP? 
+## 4. Locate the DNS query and response messages. Are then sent over UDP or TCP?
 
 Query message:
 
@@ -223,7 +223,7 @@ Domain Name System (query)
     [Response In: 123]
 ```
 
-Type is `AAAA`. 
+Type is `AAAA`.
 
 Query message contain no “answers”.
 

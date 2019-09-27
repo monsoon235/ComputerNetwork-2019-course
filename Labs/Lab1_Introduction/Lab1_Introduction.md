@@ -18,18 +18,18 @@
 测试 10 次请求 http://gaia.cs.umass.edu/wireshark-labs/INTRO-wireshark-file1.html, 得到的结果如下：
 
 | Frequency | Response time (s) |
-| ----- | ----- |
-| 1 | 0.302526000 |
-| 2 | 0.494395000 |
-| 3 | 0.304560000 |
-| 4 | 0.293132000 |
-| 5 | 0.382363000 |
-| 6 | 0.409553000 |
-| 7 | 0.410033000 |
-| 8 | 0.256819000 |
-| 9 | 0.427050000 |
-| 10 | 0.443600000 |
-| Average | 0.3724031 |
+| --------- | ----------------- |
+| 1         | 0.302526000       |
+| 2         | 0.494395000       |
+| 3         | 0.304560000       |
+| 4         | 0.293132000       |
+| 5         | 0.382363000       |
+| 6         | 0.409553000       |
+| 7         | 0.410033000       |
+| 8         | 0.256819000       |
+| 9         | 0.427050000       |
+| 10        | 0.443600000       |
+| Average   | 0.3724031         |
 
 ## 3. What is the Internet address of the gaia.cs.umass.edu (also known as wwwnet.cs.umass.edu)? What is the Internet address of your computer?
 
@@ -41,7 +41,7 @@ My computer: 192.168.43.160
 
 ### Send
 
-```
+```http
 Hypertext Transfer Protocol
     GET /wireshark-labs/INTRO-wireshark-file1.html HTTP/1.1\r\n
         [Expert Info (Chat/Sequence): GET /wireshark-labs/INTRO-wireshark-file1.html HTTP/1.1\r\n]
@@ -67,7 +67,7 @@ Hypertext Transfer Protocol
 
 ### Receive
 
-```
+```http
 Hypertext Transfer Protocol
     HTTP/1.1 200 OK\r\n
         [Expert Info (Chat/Sequence): HTTP/1.1 200 OK\r\n]
