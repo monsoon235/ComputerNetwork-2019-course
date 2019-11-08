@@ -2,7 +2,7 @@
 
 ## 1. Select the first ICMP Echo Request message sent by your computer, and expand the Internet Protocol part of the packet in the packet details window. What is the IP address of your computer?
 
-使用的是 Unix (WSL) 版本。
+**使用的是 Unix (WSL) 版本的 `traceroute`，本机发送的请求是 UDP, 返回的响应是 ICMP.**
 
 ![](pics/1.png)
 
