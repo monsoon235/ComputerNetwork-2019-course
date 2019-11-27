@@ -4,7 +4,7 @@
 
 `tcp-ethereal-trace-1` 文件中一条由本机发送给 `gaia.cs.umass.edu` 的 TCP 报文的基本信息如下：
 
-```tcp
+```pseudocode
 Frame 5: 1514 bytes on wire (12112 bits), 1514 bytes captured (12112 bits)
 Ethernet II, Src: Actionte_8a:70:1a (00:20:e0:8a:70:1a), Dst: LinksysG_da:af:73 (00:06:25:da:af:73)
 Internet Protocol Version 4, Src: 192.168.1.102, Dst: 128.119.245.12
@@ -21,7 +21,7 @@ Transmission Control Protocol, Src Port: 1161, Dst Port: 80, Seq: 566, Ack: 1, L
 
 一条由**本机**发送给 `gaia.cs.umass.edu` 的 TCP 报文的基本信息如下：
 
-```tcp
+```pseudocode
 Frame 164: 773 bytes on wire (6184 bits), 773 bytes captured (6184 bits) on interface 0
 Ethernet II, Src: IntelCor_88:6e:db (98:2c:bc:88:6e:db), Dst: Vmware_9f:00:7f (00:50:56:9f:00:7f)
 Internet Protocol Version 4, Src: 202.141.186.140, Dst: 128.119.245.12
@@ -36,7 +36,7 @@ Transmission Control Protocol, Src Port: 1185, Dst Port: 80, Seq: 1, Ack: 1, Len
 
 首条客户端发送给服务器的 SYN 消息如下：
 
-```tcp
+```pseudocode
 Transmission Control Protocol, Src Port: 1161, Dst Port: 80, Seq: 0, Len: 0
     Source Port: 1161
     Destination Port: 80
@@ -75,7 +75,7 @@ Transmission Control Protocol, Src Port: 1161, Dst Port: 80, Seq: 0, Len: 0
 
 SYNACK 报文的信息如下：
 
-```tcp
+```pseudocode
 Transmission Control Protocol, Src Port: 80, Dst Port: 1161, Seq: 0, Ack: 1, Len: 0
     Source Port: 80
     Destination Port: 1161
@@ -123,7 +123,7 @@ Transmission Control Protocol, Src Port: 80, Dst Port: 1161, Seq: 0, Ack: 1, Len
 
 它的基本信息如下：
 
-```tcp
+```pseudocode
 Transmission Control Protocol, Src Port: 1161, Dst Port: 80, Seq: 1, Ack: 1, Len: 565
     Source Port: 1161
     Destination Port: 80

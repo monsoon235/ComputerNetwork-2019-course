@@ -92,7 +92,7 @@ Address: 2001:4998:28:800::4000
 
 Query message:
 
-```dns
+```pseudocode
 Domain Name System (query)
     Transaction ID: 0x4293
     Flags: 0x0100 Standard query
@@ -118,7 +118,7 @@ Domain Name System (query)
 
 Network layer message:
 
-```dns
+```pseudocode
 Internet Protocol Version 4, Src: 202.141.180.33, Dst: 202.141.180.1
     0100 .... = Version: 4
     .... 0101 = Header Length: 20 bytes (5)
@@ -140,13 +140,13 @@ Query message was sent over `UDP`.
 
 Query message:
 
-```dns
+```pseudocode
 User Datagram Protocol, Src Port: 62915, Dst Port: 53
 ```
 
 Response message:
 
-```dns
+```pseudocode
 User Datagram Protocol, Src Port: 53, Dst Port: 62915
 ```
 
@@ -154,13 +154,13 @@ Destination port for the DNS query message and source port of DNS response messa
 
 ## 6. To what IP address is the DNS query message sent? Use ipconfig to determine the IP address of your local DNS server. Are these two IP addresses the same?
 
-```dns
+```pseudocode
 Internet Protocol Version 4, Src: 202.141.180.33, Dst: 202.141.180.1
 ```
 
 DNS query message is sent to `202.141.180.1`.
 
-```cmd
+```powershell
 > ipconfig /all
 
 Windows IP 配置
@@ -199,7 +199,7 @@ Local DNS server is `202.141.180.1`, same as the query message destination.
 
 ## 7. Examine the DNS query message. What “Type” of DNS query is it? Does the query message contain any “answers”?
 
-```dns
+```pseudocode
 Domain Name System (query)
     Transaction ID: 0x4293
     Flags: 0x0100 Standard query
@@ -233,7 +233,7 @@ Query message contain no “answers”.
 
 The are following:
 
-```dns
+```pseudocode
 Answers
     www.ietf.org: type CNAME, class IN, cname www.ietf.org.cdn.cloudflare.net
         Name: www.ietf.org
@@ -260,7 +260,7 @@ Answers
 
 ## 9. Consider the subsequent TCP SYN packet sent by your host. Does the destination IP address of the SYN packet correspond to any of the IP addresses provided in the DNS response message?
 
-```dns
+```pseudocode
 Internet Protocol Version 6, Src: 2001:da8:d800:195:e40d:5260:fa0c:b67, Dst: 2606:4700:10::6814:155
 ```
 
@@ -276,13 +276,13 @@ No. Images are at the same domain name with HTML file, So it's not necessary to 
 
 Query:
 
-```dns
+```pseudocode
 User Datagram Protocol, Src Port: 49355, Dst Port: 53
 ```
 
 Response:
 
-```dns
+```pseudocode
 User Datagram Protocol, Src Port: 53, Dst Port: 49355
 ```
 
@@ -290,7 +290,7 @@ They are both `53`.
 
 ## 12. To what IP address is the DNS query message sent? Is this the IP address of your default local DNS server?
 
-```dns
+```pseudocode
 Internet Protocol Version 4, Src: 202.141.180.33, Dst: 202.141.180.1
 ```
 
@@ -298,7 +298,7 @@ DNS query is sent to `202.141.180.1`, same with local DNS server.
 
 ## 13. Examine the DNS query message. What “Type” of DNS query is it? Does the query message contain any “answers”?
 
-```dns
+```pseudocode
 Domain Name System (query)
     Transaction ID: 0x2985
     Flags: 0x0100 Standard query
@@ -332,7 +332,7 @@ Query message contain no “answers”.
 
 The are following:
 
-```dns
+```pseudocode
 Answers
     www.mit.edu: type CNAME, class IN, cname www.mit.edu.edgekey.net
         Name: www.mit.edu
@@ -383,7 +383,7 @@ dscb.akamaiedge.net
         minimum = 1800
 ```
 
-```dns
+```pseudocode
 Internet Protocol Version 4, Src: 202.141.180.33, Dst: 202.141.180.1
 ```
 
@@ -391,7 +391,7 @@ DNS query is sent to `202.141.180.1`, same with local DNS server.
 
 ## 17. Examine the DNS query message. What “Type” of DNS query is it? Does the query message contain any “answers”?
 
-```dns
+```pseudocode
 Domain Name System (query)
     Transaction ID: 0xdf2e
     Flags: 0x0100 Standard query
@@ -421,7 +421,7 @@ Query message contain no “answers”.
 
 ## 18. Examine the DNS response message. What MIT nameservers does the response message provide? Does this response message also provide the IP addresses of the MIT namesers?
 
-```dns
+```pseudocode
 Domain Name System (response)
     Transaction ID: 0xdf2e
     Flags: 0x8180 Standard query response, No error
@@ -504,7 +504,7 @@ Name:   www.aiit.or.kr
 Address: 58.229.6.225
 ```
 
-```dns
+```pseudocode
 Internet Protocol Version 4, Src: 202.141.180.33, Dst: 114.114.115.115
 ```
 
@@ -523,7 +523,7 @@ Authoritative answers can be found from:
 
 ## 21. Examine the DNS query message. What “Type” of DNS query is it? Does the query message contain any “answers”?
 
-```dns
+```pseudocode
 Domain Name System (query)
     Transaction ID: 0x710e
     Flags: 0x0100 Standard query
@@ -555,7 +555,7 @@ Query message contain no “answers”.
 
 The are following:
 
-```dns
+```pseudocode
 Answers
     www.aiit.or.kr: type A, class IN, addr 58.229.6.225
         Name: www.aiit.or.kr

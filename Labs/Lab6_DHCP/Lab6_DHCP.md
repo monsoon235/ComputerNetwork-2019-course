@@ -23,7 +23,7 @@ Each DHCP message is sent over UDP.
 
 Link-layer address is `98:2c:bc:88:6e:db`.
 
-```dhcp
+```pseudocode
 Ethernet II, Src: IntelCor_88:6e:db (98:2c:bc:88:6e:db), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
     Destination: Broadcast (ff:ff:ff:ff:ff:ff)
     Source: IntelCor_88:6e:db (98:2c:bc:88:6e:db)
@@ -34,7 +34,7 @@ Ethernet II, Src: IntelCor_88:6e:db (98:2c:bc:88:6e:db), Dst: Broadcast (ff:ff:f
 
 Discover 报文内容如下：
 
-```dhcp
+```pseudocode
 Dynamic Host Configuration Protocol (Discover)
     Message type: Boot Request (1)
     Hardware type: Ethernet (0x01)
@@ -65,7 +65,7 @@ Dynamic Host Configuration Protocol (Discover)
 
 Request 报文内容如下：
 
-```dhcp
+```pseudocode
 Frame 3: 368 bytes on wire (2944 bits), 368 bytes captured (2944 bits) on interface 0
 Ethernet II, Src: IntelCor_88:6e:db (98:2c:bc:88:6e:db), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
 Internet Protocol Version 4, Src: 0.0.0.0, Dst: 255.255.255.255
@@ -129,7 +129,7 @@ Offer 消息的源 IP 极为 DHCP 服务器的 IP: `192.168.1.1`
 
 ## 8
 
-```dhcp
+```pseudocode
 Option: (53) DHCP Message Type (Offer)
     Length: 1
     DHCP: Offer (2)
@@ -146,7 +146,7 @@ Option: (54) DHCP Server Identifier (192.168.1.1)
 
 地址 `0.0.0.0` 代表没有中继代理。
 
-```dhcp
+```pseudocode
 Relay agent IP address: 0.0.0.0
 ```
 
@@ -154,7 +154,7 @@ Relay agent IP address: 0.0.0.0
 
 ## 10
 
-```dhcp
+```pseudocode
 Option: (1) Subnet Mask (255.255.255.0)
     Length: 4
     Subnet Mask: 255.255.255.0

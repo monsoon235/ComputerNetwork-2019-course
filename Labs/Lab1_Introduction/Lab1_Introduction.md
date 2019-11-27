@@ -41,7 +41,7 @@ My computer: 192.168.43.160
 
 ### Send
 
-```http
+```pseudocode
 Hypertext Transfer Protocol
     GET /wireshark-labs/INTRO-wireshark-file1.html HTTP/1.1\r\n
         [Expert Info (Chat/Sequence): GET /wireshark-labs/INTRO-wireshark-file1.html HTTP/1.1\r\n]
@@ -67,7 +67,7 @@ Hypertext Transfer Protocol
 
 ### Receive
 
-```http
+```pseudocode
 Hypertext Transfer Protocol
     HTTP/1.1 200 OK\r\n
         [Expert Info (Chat/Sequence): HTTP/1.1 200 OK\r\n]

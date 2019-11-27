@@ -2,7 +2,7 @@
 
 ## 1. Select one UDP packet from your trace. From this packet, determine how many fields there are in the UDP header. (You shouldn’t look in the textbook! Answer these questions directly from what you observe in the packet trace.) Name these fields.
 
-```udp
+```pseudocode
 User Datagram Protocol, Src Port: 39417, Dst Port: 1900
     Source Port: 39417
     Destination Port: 1900
@@ -34,7 +34,7 @@ The value in the Length field is the length of whole UDP message, including 4 he
 
 Headers:
 
-```udp
+```pseudocode
 User Datagram Protocol, Src Port: 39417, Dst Port: 1900
     Source Port: 39417
     Destination Port: 1900
@@ -51,7 +51,7 @@ The length of 4 headers is 8 bytes.
 
 Application data:
 
-```udp
+```pseudocode
 NOTIFY * HTTP/1.1\r\n
 HOST: [FF02::C]:1900\r\n
 CACHE-CONTROL: max-age=60\r\n
@@ -81,7 +81,7 @@ $2^{16}-1=65536$.
 
 ## 6. What is the protocol number for UDP? Give your answer in both hexadecimal and decimal notation. To answer this question, you’ll need to look into the Protocol field of the IP datagram containing this UDP segment (see Figure 4.13 in the text, and the discussion of IP header fields).
 
-```udp
+```pseudocode
 Internet Protocol Version 6, Src: fe80::52bd:5fff:fe1a:c572, Dst: ff02::c
     0110 .... = Version: 6
     .... 0000 0000 .... .... .... .... .... = Traffic Class: 0x00 (DSCP: CS0, ECN: Not-ECT)
@@ -100,7 +100,7 @@ Internet Protocol Version 6, Src: fe80::52bd:5fff:fe1a:c572, Dst: ff02::c
 
 Sent:
 
-```udp
+```pseudocode
 User Datagram Protocol, Src Port: 53, Dst Port: 51504
     Source Port: 53
     Destination Port: 51504
@@ -115,7 +115,7 @@ User Datagram Protocol, Src Port: 53, Dst Port: 51504
 
 Received:
 
-```udp
+```pseudocode
 User Datagram Protocol, Src Port: 53, Dst Port: 51504
     Source Port: 53
     Destination Port: 51504
