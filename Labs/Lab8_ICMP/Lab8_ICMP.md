@@ -1,4 +1,4 @@
-# Computer Networking Lab 7 -- ICMP
+# Computer Networking Lab 8 -- ICMP
 
 **Notice: 执行的命令为 `ping -n 10 ustc.edu.cn`**
 
