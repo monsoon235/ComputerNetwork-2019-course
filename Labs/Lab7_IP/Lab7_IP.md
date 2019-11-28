@@ -57,7 +57,7 @@ My IP address is `192.168.43.160`.
 
 **经过我的查询，Linux 下 `traceroute` 有一个默认选项 `-q 3`, 即每个 `Time To Live` 会发送 3 个重复包。**
 
-**因此，若使用 `-q 1`, 则在“必须变化”的 field 中还需要添加 `Time To Live`.**
+**因此，若使用 `-q 1`, 则在「必须变化」的 field 中还需要添加 `Time To Live`.**
 
 ## 7. Describe the pattern you see in the values in the Identification field of the IP datagram
 
